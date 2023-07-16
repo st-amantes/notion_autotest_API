@@ -1,6 +1,6 @@
 import pytest
 from selene import browser
-
+from helpers.setting_info import UserData
 
 @pytest.fixture(scope='function', params=['desktop', 'tablet', 'mobile'])
 def window_size(request):
@@ -9,7 +9,8 @@ def window_size(request):
 
 @pytest.fixture(scope='function')
 def setup_browser(window_size):
-    browser.config.base_url = 'https://shop.spacex.com/'
+
+    browser.config.base_url = UserData.URL
     browser.config.timeout = 5
 
     if window_size == 'desktop':
