@@ -8,6 +8,11 @@ packages = [{include = "notion_autotest_api"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pytest = "^7.4.0"
+selenium = "^4.10"
+selene = "^2.0.0rc2"
+allure-pytest = "^2.13.2"
+python-dotenv ="^1.0.0"
 
 
 [build-system]
