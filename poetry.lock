@@ -407,13 +407,13 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "selene"
-version = "2.0.0rc3"
+version = "2.0.0rc3.post2"
 description = "User-oriented browser tests in Python (Selenide port)"
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "selene-2.0.0rc3-py3-none-any.whl", hash = "sha256:914c295f7981154bbe9b69b3b9c4a952c00e0547ab3a45c79753397cd1d8fa58"},
-    {file = "selene-2.0.0rc3.tar.gz", hash = "sha256:be578b896f1f87e5c73c68ca5ec26cff6a78b5e9b283c6b37b014f0d456e172b"},
+    {file = "selene-2.0.0rc3.post2-py3-none-any.whl", hash = "sha256:4630dce0f570c952942a4eedc273de572dbfe6e56213a2ce8d806a71962f8922"},
+    {file = "selene-2.0.0rc3.post2.tar.gz", hash = "sha256:da6b293bf286c10738bd597190d5cec55f4b69e29abc163dba96d16ee20b9bdc"},
 ]
 
 [package.dependencies]
@@ -581,4 +581,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "b79fe6ff4d6c1a4523e7ab54ba8dff63138b08ac009992ab83701292db53c6d9"
+content-hash = "3e9d720e81cc671c3e82326a8288de8e4c1156ec2d7cd9166c52407b1e3badf7"

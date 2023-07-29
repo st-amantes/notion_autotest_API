@@ -10,7 +10,7 @@ packages = [{include = "notion_autotest_api"}]
 python = "^3.11"
 pytest = "^7.4.0"
 selenium = "^4.10"
-selene = "^2.0.0rc2"
+selene = "^2.0.0rc3"
 allure-pytest = "^2.13.2"
 python-dotenv ="^1.0.0"
 

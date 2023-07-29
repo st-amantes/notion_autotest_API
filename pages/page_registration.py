@@ -16,8 +16,6 @@ class Registration_page:
     def account(self):
         browser.element(self.locator.ICONBUTTON).click()
 
-    def create_account(self):
-        browser.all(self.locator.CREATEACCOUNT).element_by(have.exact_text(self.locator.CREATETEXT)).click()
 
     def first_name(self):
         browser.element(self.locator.FIRSTNAME).send_keys()
@@ -31,5 +29,5 @@ class Registration_page:
     def password(self):
         browser.element(self.locator.PASSWORD).send_keys()
 
-    def button_pass(self):
-        browser.open(self.locator.BUTTONPASS).click()
+    def button_submit(self):
+        browser.open(self.locator.SUBMIT).click()
