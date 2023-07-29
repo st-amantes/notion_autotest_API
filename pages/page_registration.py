@@ -17,13 +17,12 @@ class Registration_page:
 
     def account(self):
         browser.element(self.locator.ICONBUTTON).click()
+    def registration_button(self):
+        browser.element(self.locator.REG).click()
 
+    def name(self):
+        browser.element(self.locator.NAME).send_keys(self.data.FIRSTNAME)
 
-    def first_name(self):
-        browser.element(self.locator.FIRSTNAME).send_keys(self.data.FIRSTNAME)
-
-    def last_name(self):
-        browser.element(self.locator.LASTNAME).send_keys(self.data.LASTNAME)
 
     def email(self):
         browser.element(self.locator.EMAIL).send_keys(self.data.EMAIL)
