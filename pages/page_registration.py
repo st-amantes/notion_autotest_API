@@ -4,6 +4,7 @@ from attr import dataclass
 from selene import browser, have
 from locators.locator import User_Locators
 from helpers.setting_info import UserData
+from selene.support.shared.jquery_style import s
 
 locator = User_Locators()
 @dataclass()
@@ -16,19 +17,19 @@ class Registration_page:
         browser.open("")
 
     def account(self):
-        browser.element(self.locator.ICONBUTTON).click()
+        s(self.locator.ICONBUTTON).click()
     def registration_button(self):
-        browser.element(self.locator.REG).click()
+        s(self.locator.REG).click()
 
     def name(self):
-        browser.element(self.locator.NAME).send_keys(self.data.FIRSTNAME)
+        s(self.locator.NAME).send_keys(self.data.FIRSTNAME)
 
 
     def email(self):
-        browser.element(self.locator.EMAIL).send_keys(self.data.EMAIL)
+        s(self.locator.EMAIL).send_keys(self.data.EMAIL)
 
     def password(self):
-        browser.element(self.locator.PASSWORD).send_keys(self.data.PASSWORD)
+        s(self.locator.PASSWORD).send_keys(self.data.PASSWORD)
 
     def button_submit(self):
-        browser.element(self.locator.SUBMIT).click()
+        s(self.locator.SUBMIT).click()

@@ -8,7 +8,7 @@ class UserData:
     load_dotenv()
 
     URL = os.getenv("URL")
-    FIRSTNAME = os.getenv("FIRSTNAME")
+    FIRSTNAME = f"{os.getenv('FIRSTNAME')}+{random.randint(10, 100)}"
     EMAIL = f"{os.getenv('EMAIL')}+{random.randint(10, 100)}@gmail.com"
     PASSWORD = os.getenv("PASSWORD")
-    LASTNAME = os.getenv("LASTNAME")
+
