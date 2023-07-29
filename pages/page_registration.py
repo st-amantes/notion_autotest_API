@@ -31,4 +31,4 @@ class Registration_page:
         browser.element(self.locator.PASSWORD).send_keys(self.data.PASSWORD)
 
     def button_submit(self):
-        browser.open(self.locator.SUBMIT).click()
+        browser.element(self.locator.SUBMIT).click()
