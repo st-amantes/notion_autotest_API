@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "notion_autotest_api"}]
 
 [tool.poetry.dependencies]
-python = "3.9"
+python = "3.10.5"
 pytest = "^7.4.0"
 selenium = "^4.10"
 selene = "^2.0.0rc3"
